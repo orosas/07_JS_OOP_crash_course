@@ -1,4 +1,3 @@
-
 // Classes. JS ES6
 
 class Book{
@@ -31,12 +30,16 @@ class Book{
 }
 
 // Instanciar un Objecto
-
 const book1 = new Book('Libro Uno', 'Juan Pérez', '2001');
 
 console.log(book1); 
 book1.revise('1998');
 console.log(book1); 
 
+// Nota: Indica error topBookStore is not a function, debido a
+// ser una static function
+// book1.topBookStore(); // Indica error
+
 // La siguiente línea llama al método estático topBookStore
 console.log(Book.topBookStore())
+
